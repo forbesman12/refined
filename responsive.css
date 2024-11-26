@@ -1,0 +1,73 @@
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+        box-shadow: none;
+        width: auto;
+        border-radius: 0;
+    }
+
+    .menu a {
+        border-bottom: none;
+        padding: 0 1rem;
+    }
+    .jumbotron{
+        align-items: center;
+         background-position: left;
+         padding-inline: 1rem;
+         ;
+    }
+    .jumbotron button{
+        width: 40%;
+        margin-left: 0em;
+    }
+    
+    .grid{
+        margin-inline: 10px;
+        gap: 0px;
+        justify-content: space-between;
+    }
+    /*product  */
+    .product {
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+        grid-template-columns: repeat(2, 1fr); /* Adjust for 4 columns */
+        gap: 1rem;
+        padding-inline: 1em;
+    }
+    .product-card {
+        padding: 10px;
+    }
+    .product-card img {
+        width: 100%;
+        max-height: 290px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    .product-card button.add-to-cart {
+        background-color: transparent; /* Primary color */
+        width: 100%;
+        border-radius: 4px;
+        padding: 0.5rem 0.5rem;
+        cursor: pointer;
+        font-size: 0.8rem;
+    }
+    .product-card h3{
+        font-size: 1em;
+    }
+    .product-card p{
+        font-size: 0.8em;
+    }
+    /* footer */
+    footer{
+        padding: 1em;
+    }
+    footer p{
+        font-size: 13px;
+    }
+    .about{
+        width: 68%;
+    }
+}

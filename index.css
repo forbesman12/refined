@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+    background-color: #ffffff;
+    color: white;
+}
+.brand-logo img{
+    width: 30%;
+    height: 30%;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    padding: 1rem;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+.menu a:hover {
+    background-color: #333;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons a {
+    color: rgb(0, 0, 0);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+.icons a:hover {
+    color: #ddd;
+}
+
+
+.jumbotron{
+    background-color: #333;
+    padding-inline: 10rem;
+    height: 70vh;
+    background-image: url(./assets/hoodie.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.jumbotron h2{
+    color: #ffffff;
+}
+.jumbotron img{
+    width: 20%;
+}
+
+.jumbotron button{
+    width: 20%;
+    margin-left: 7em;
+    padding-block: 15px;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+}
+.jimage{
+    display: flex;
+    align-items: center;
+    padding-bottom: 3em;
+}
+.grid{
+    margin-top: 20px;
+    margin-inline: 2rem;
+    padding: 0.7em;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(232, 238, 238);
+}
+.grid button{
+    border: none;
+    font-size: large;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* Product card styling */
+.product {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust for 4 columns */
+    gap: 1rem;
+    padding-inline: 2em;
+}
+
+.product-card {
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+/* Product card image */
+.product-card img {
+    width: 90%;
+    max-height: 290px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Product card button */
+.product-card button.add-to-cart {
+    background-color: transparent; /* Primary color */
+    color: #000;
+    border: 1px solid;
+    width: 75%;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transitions */
+}
+.product-card h3{
+    font-size: 1.2em;
+}
+.product-card p{
+    font-size: 0.9em;
+}
+
+/* Hover effect on button */
+.product-card:hover button.add-to-cart {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: white;
+}
+/* pagination */
+#paginationContainer {
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+}
+
+#paginationContainer button {
+    margin: 0 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#paginationContainer button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+}
+.about{
+    width: 200%;
+}
+.ml-embedded{
+    width: 98%;
+}
+
+
+
+
+

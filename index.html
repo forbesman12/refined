@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav role="navigation">
+        <div class="brand-logo">
+            <img src="./assets/refinedlogo.png" alt="logo">
+        </div>
+        
+       
+        <div class="icons">
+            <a href="#" id="searchIcon"><i class="fas fa-search"></i></a> <!-- Search Icon -->
+            <input type="text" id="searchInput" placeholder="Search products..." style="display: none;">
+            <a href="cart.html" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cartCount" style="display: none;">0</span> <!-- Hidden by default -->
+            </a> <!-- Cart Icon -->
+            <a href="#"><i class="fas fa-user"></i></a> <!-- Login Icon -->
+        </div>
+    </nav>
+    <!-- Jumbotron -->
+     <div class="jumbotron"role="banner">
+        <div class="jimage">
+            <h2>ReFiNeD|</h2><img src="./assets/refinedlogo.png" alt="logo"/>
+        </div>
+            <button>Shop Now</button>
+        
+     </div>
+     <section>
+        <div class="grid" id="grid">
+            <button onclick="filterItems('all')">All</button>
+            <button onclick="filterItems('hoodies')">Hoodies</button>
+            <button onclick="filterItems('sweatshirts')">Sweatshirts</button>
+            <button onclick="filterItems('shirts')">Shirts</button>
+        </div>
+        
+    </section>
+    <div class="product" id="productContainer">
+        <!-- Product cards will be populated here -->
+    </div>
+
+    <div id="paginationContainer"></div>
+</body>
+<footer role="contentinfo">
+    <div class="about">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-phone">&nbsp;&nbsp;</i>+90539 137 37 52</p>
+        <p><i class="fa-solid fa-location-dot">&nbsp;&nbsp;&nbsp;</i>Mersin Turkey</p>
+        <i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-instagram"></i>
+    </div>
+    <div class="ml-embedded" data-form="7uB1Ex"></div>
+      
+</footer>
+<script type="module"  src="index.js"></script>
+</html>
