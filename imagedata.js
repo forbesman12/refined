@@ -30,8 +30,8 @@ export const products = {
             productName: "Blue T-Shirt",
             category: "Sweatshirts",
             price: 3000,
-            image: "./images/sweatshirt.png",
-            additionalImages: ["./images/sweatshirt.png","./images/sweatshirt.png"]
+            image: "./images/sweat.jpg",
+            additionalImages: ["./images/sweat3.png","./images/sweat4.png"]
         },
         // Add more products as needed
         {
@@ -109,6 +109,15 @@ export const products = {
             additionalImages: ["./images/sweatshirt.png","./images/sweatshirt.png"]
         },
         {
+            item: "16",
+            productName: "Cargo Jackets",
+            category: "Jackets",
+            price: 3000,
+            image: "./images/fold3.png",
+            additionalImages: ["./images/fold2.png"]
+        },
+       
+        {
             item: "13",
             productName: "Sweat Shirt",
             category: "Shirts",
@@ -125,7 +134,7 @@ export const products = {
             additionalImages: ["./images/sweatshirt.png","./images/sweatshirt.png"]
         },
         {
-            item: "14",
+            item: "16",
             productName: "Cargo Jackets",
             category: "Jackets",
             price: 3000,
