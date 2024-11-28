@@ -24,11 +24,11 @@
         margin-left: 0em;
     }
     
-    .grid{
+    /* .grid{
         margin-inline: 10px;
         gap: 0px;
         justify-content: space-between;
-    }
+    } */
     /*product  */
     .product {
         margin-top: 1.5em;

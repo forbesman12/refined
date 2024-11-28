@@ -91,9 +91,10 @@ nav {
 }
 .grid{
     margin-top: 20px;
-    margin-inline: 2rem;
+    /* margin-inline: 2rem; */
     padding: 0.7em;
     display: flex;
+    max-width: 100%;
     gap: 20px;
     align-items: center;
     border-radius: 5px;
